@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/shubham.jpg' %}" alt="ProfilePic" class="img-thumbnail" width="200px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello...</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">I am <b class="text-warning">Shubham Patel</b>.
+                I am 3rd year CSE Undergrad at SMVDU(J&K). I've very keen interest in
+                <b class="text-warning">Data Science</b>. And, I'm very much
+                interested in making my career in this Field.</p>
+            <p>I love exploring new techologies in data science and learning them
+                simultaneously. Web Development also interests me and, I've experience of
+                working with python frameworks like <b class="text-warning">Django</b>
+                and <b class="text-warning">Flask</b>.</p>
+            <p>I've worked on several natural language
+                processing projects like <b class="text-warning"> text summarization</b>,
+                <b class="text-warning">twitter sentiment classification</b>,
+                <b class="text-warning">text summarization</b> etc. When it comes
+                to Django i've made a <b class="text-warning">blog app</b> and my portfolio
+                itself is being made in Django.</p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact</a>
+        <a href="{% static 'resume.pdf' %}" class="btn btn-outline-danger">Resume</a>
+    </div>
+</div>
+{% endblock content %}

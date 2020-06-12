@@ -1,0 +1,28 @@
+{% load static %}
+<div class="border-right border-warning h-100">
+    <div class="text-center">
+        <img src="{% static 'core/images/shubham.jpg' %}" alt="ProfilePic"
+            class="img-fluid rounded-circle mt-5" 
+            width="100px">
+        <h3 class="text-white mt-3 mr-1 st-font">Shubham Patel</h3>
+    </div>
+    <style>
+        a.nav-link:hover{
+            color: black;
+            background-color: #e9cd79;
+        }
+        
+        a.nav-link.active{
+            color: black;
+            background-color: #ffc107;
+            font-weight: bold;
+        }
+    </style>
+    <hr class="border-light">
+    <nav class="nav flex-column text-center">
+        <a class="nav-link {{home}}" href="{% url 'home' %}">Home</a>
+        <a class="nav-link {{education}}" href="{% url 'education' %}">Education</a>
+        <a class="nav-link {{skill}}" href="{% url 'skill' %}">Skills</a>
+        <a class="nav-link {{contact}}" href="{% url 'contact' %}">Contact</a>
+      </nav>
+</div>
